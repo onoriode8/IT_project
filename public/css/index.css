@@ -4,21 +4,43 @@ body {
 
 /* HEADERS STYLES */
 
-aside ul li a,
-aside ul {
+header nav {
+    margin-top: 0;
+}
+
+header div .ul_cont li a {
     list-style: none;
     text-decoration: none;
     color: black;
     display: block;
-    /* align-items: center; */
-    margin: 8px 20px;
-    padding: 5px 8px;
+    margin: 3rem 0px;
+    padding: 8px 5px;
+    font-size: larger;
+}
+
+header div .ul_cont li a:hover {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    color: #fff;
+    background-color: rgba(36, 36, 197, 0.5);
+}
+
+header div .ul_cont {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-left: 0;
     background-color: #fff;
-    border: 1px solid black;
     min-width: 70%;
     position: fixed;
-    top: 0;
+    margin-top: -3em;
     z-index: 9;
+    height: 100vh;
+    transition: all 0.5s ease-out;
+    transform: translateX(0vh);
+    /* border: 1px solid black; */
+    box-shadow: 0px 1px 3px 1px #ccc;
 }
 
 header nav {
@@ -44,7 +66,7 @@ header ul li a {
     margin: 8px 20px;
 }
 
-header ul li a:hover {
+.list_a:hover {
     background: rgba(40, 40, 225, 0.3);
     border: 1px solid #ccc;
     padding: 4px 8px;
@@ -79,9 +101,7 @@ section .section_image {
     justify-content: space-between;
     align-items: center;
     flex-wrap: no-wrap;
-    /* border: 1px solid black; */
     padding: 30px 0px;
-    /* margin: 40px 0px; */
 }
 
 .sec h1 {
@@ -92,7 +112,6 @@ section .section_image {
 .sec p {
     margin-left: 30%;
     margin-right: 10%;
-    /* border: 1px solid black; */
 }
 
 /* ARTICLE CONTAIN */
@@ -153,6 +172,7 @@ article img {
     }
     header nav {
         padding: 20px 0px;
+        justify-content: space-between;
     }
     section .section_image {
         width: 100%;
@@ -169,15 +189,11 @@ article img {
     }
     .sec {
         flex-wrap: wrap;
-        /* padding: 0px 0px; */
-        /* margin: 0px 0px; */
         justify-content: space-evenly;
-        /* border: 1px solid black; */
     }
     .sec h1,
     .sec p {
         text-align: center;
-        /* justify-self: unset; */
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -209,7 +225,7 @@ article img {
     header .menu {
         display: none;
     }
-    aside ul {
+    header div .ul_cont {
         display: none;
     }
 }
